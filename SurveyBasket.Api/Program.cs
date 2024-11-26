@@ -4,10 +4,15 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using MapsterMapper;
 using SurveyBasket.Api.Contracts.Validations;
+using SurveyBasket.Api.Presistence;
 using SurveyBasket.Api.Services;
 using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var ConnectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(ConnectionString));
 
 // Add services to the container.
 
