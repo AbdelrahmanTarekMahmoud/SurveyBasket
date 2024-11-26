@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "SurveyBasket.Api.Models.Poll",
+        "Type": "SurveyBasket.Api.Contracts.Requests.PollRequest",
         "IsRequired": true
       }
     ],
@@ -46,7 +46,7 @@
       },
       {
         "Name": "request",
-        "Type": "SurveyBasket.Api.Models.Poll",
+        "Type": "SurveyBasket.Api.Contracts.Requests.PollRequest",
         "IsRequired": true
       }
     ],

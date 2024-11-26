@@ -1,6 +1,11 @@
 
 
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using MapsterMapper;
+using SurveyBasket.Api.Contracts.Validations;
 using SurveyBasket.Api.Services;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +15,16 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+var mappingConfig = TypeAdapterConfig.GlobalSettings;
+mappingConfig.Scan(Assembly.GetExecutingAssembly());
+
+builder.Services.AddSingleton<IMapper>(new Mapper(mappingConfig));
+
+
+builder.Services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+builder.Services.AddFluentValidationAutoValidation();
+
 builder.Services.AddScoped<IPollService , PollService>();
 
 var app = builder.Build();

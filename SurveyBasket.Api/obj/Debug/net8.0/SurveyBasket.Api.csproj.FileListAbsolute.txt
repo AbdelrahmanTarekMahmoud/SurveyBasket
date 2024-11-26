@@ -31,3 +31,8 @@ D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\obj\Debug\net8.0\SurveyBa
 D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\obj\Debug\net8.0\SurveyBasket.Api.genruntimeconfig.cache
 D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\obj\Debug\net8.0\ref\SurveyBasket.Api.dll
 D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\obj\Debug\net8.0\SurveyBasket.Api.sourcelink.json
+D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\bin\Debug\net8.0\Mapster.dll
+D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\bin\Debug\net8.0\Mapster.Core.dll
+D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\bin\Debug\net8.0\FluentValidation.dll
+D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Abdo\SurveyBasket\SurveyBasket.Api\SurveyBasket.Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
