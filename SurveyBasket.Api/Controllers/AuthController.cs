@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
+using SurveyBasket.Api.Authentication;
 
 namespace SurveyBasket.Api.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class AuthController(IAuthService authService) : ControllerBase
+    public class AuthController(IAuthService authService ) : ControllerBase
     {
         private readonly IAuthService _authService = authService;
 
@@ -15,5 +17,6 @@ namespace SurveyBasket.Api.Controllers
             var authResult = await _authService.GetTokenAsync(loginRequest.Email, loginRequest.password, cancellationToken);
             return authResult is null ? BadRequest("invalid email/password") : Ok(authResult);
         }
+        
     }
 }
