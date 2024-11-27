@@ -1,10 +1,9 @@
 ﻿
-using SurveyBasket.Api.EntitiesConfigurations;
-using System.Reflection;
+
 
 namespace SurveyBasket.Api.Presistence
 {
-    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : DbContext(options)
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<ApplicationUser> (options)
     {
         public DbSet<Poll> polls { get; set; }
 

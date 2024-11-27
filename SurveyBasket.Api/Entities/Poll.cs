@@ -1,5 +1,4 @@
-﻿using SurveyBasket.Api.Contracts.Requests;
-using SurveyBasket.Api.Contracts.Responses;
+﻿
 
 namespace SurveyBasket.Api.Entities
 {

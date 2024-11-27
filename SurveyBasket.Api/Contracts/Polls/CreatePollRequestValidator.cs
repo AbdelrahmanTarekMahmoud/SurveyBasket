@@ -1,7 +1,7 @@
 ﻿
 using FluentValidation;
 
-namespace SurveyBasket.Api.Contracts.Validations
+namespace SurveyBasket.Api.Contracts.Polls
 {
     public class CreatePollRequestValidator : AbstractValidator<PollRequest>
     {
@@ -26,7 +26,7 @@ namespace SurveyBasket.Api.Contracts.Validations
 
             RuleFor(x => x)
                 .Must(ValidDate);
-               
+
 
         }
         private bool ValidDate(PollRequest request)
@@ -35,4 +35,3 @@ namespace SurveyBasket.Api.Contracts.Validations
         }
     }
 }
- 

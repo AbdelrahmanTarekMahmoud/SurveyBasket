@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "SurveyBasket.Api.Contracts.Requests.PollRequest",
+        "Type": "SurveyBasket.Api.Contracts.Polls.PollRequest",
         "IsRequired": true
       }
     ],
@@ -46,7 +46,7 @@
       },
       {
         "Name": "request",
-        "Type": "SurveyBasket.Api.Contracts.Requests.PollRequest",
+        "Type": "SurveyBasket.Api.Contracts.Polls.PollRequest",
         "IsRequired": true
       }
     ],
@@ -92,6 +92,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SurveyBasket.Api.Controllers.AuthController",
+    "Method": "LoginAsync",
+    "RelativePath": "Auth",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "SurveyBasket.Api.Contracts.Authentication.LoginRequest",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]
